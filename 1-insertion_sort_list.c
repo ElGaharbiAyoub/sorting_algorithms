@@ -42,6 +42,6 @@ void insertion_sort_list(listint_t **list)
 			prev = current->prev;
 		}
 		current = next;
-        current ? (next = current->next) : (next = NULL);
+		current ? (next = current->next) : (next = NULL);
 	}
 }
