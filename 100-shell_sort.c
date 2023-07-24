@@ -16,7 +16,7 @@ void shell_sort(int *array, size_t size)
 	/*Generate the Knuth sequence for intervals*/
 	while (gap < size / 3)
 	{
-		gap = (gap * 3) + 1;
+		gap = gap * 3 + 1;
 	}
 
 	while (gap > 0)
@@ -31,10 +31,10 @@ void shell_sort(int *array, size_t size)
 				j -= gap;
 			}
 			array[j] = tmp;
-			print_array(array, size);
 		}
+		print_array(array, size);
 		/*Reduce the gap as per Knuth sequence*/
-		gap = (gap) / 3;
+		gap = (gap - 1) / 3;
 
 	}
 }
