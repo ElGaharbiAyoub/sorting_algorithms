@@ -34,7 +34,7 @@ void shell_sort(int *array, size_t size)
 			print_array(array, size);
 		}
 		/*Reduce the gap as per Knuth sequence*/
-		gap = (gap - 1) / 3;
+		gap = (gap) / 3;
 
 	}
 }
